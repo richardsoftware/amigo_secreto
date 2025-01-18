@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Amigo secreto</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h1 class="title">Amigo secreto</h1>
+      </header>
+      <main>
+        <div class="user-input-container">
+          <input
+            type="text"
+            class="user-input"
+            id="userInputField"
+            placeholder="Escribe el nombre de tus amigos"
+          />
+          <button class="user-input-submit" id="userSubtmitBtn">Agregar</button>
+        </div>
+        <div class="friends-list-container">
+          <ul class="friends-ulist" id="friendsUlist"></ul>
+        </div>
+        <div class="secret-friend-container">
+          <button id="selectFriendBtn" class="friend-selecter-btn">
+            Elegir amigo
+          </button>
+          <div class="chosen-friend hidden" id="secretFriendText"></div>
+        </div>
+      </main>
+      <footer class="footer">
+        <p>
+          Hecho por <a href="https://github.com/sebg02">Sebas GR</a> &copy 2025
+        </p>
+      </footer>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

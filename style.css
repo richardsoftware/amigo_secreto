@@ -1,0 +1,100 @@
+html {
+  margin: 0;
+}
+
+body {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  background-color: #a2eaec;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  padding: 5rem;
+  font-size: 3rem;
+}
+
+.user-input-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.user-input {
+  max-width: 500px;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  margin-right: 0.4em;
+  border-radius: 5px;
+}
+
+.user-input-submit {
+  padding: 0.5rem;
+  background-color: #88ebd5;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.friends-list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.secret-friend-container {
+  display: grid;
+  place-content: center;
+}
+.friend-selecter-btn {
+  padding: 0.5rem;
+  background-color: #e79e59;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.chosen-friend {
+  margin: 3rem;
+  font-weight: bold;
+  background-color: #95fc95;
+  padding: 1rem;
+  border: solid 1px #1a9b1a;
+  border-radius: 2px;
+}
+
+.footer {
+  margin-top: 6rem;
+  text-align: center;
+  background-color: #b3e5f5;
+}
