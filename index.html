@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Amigo secreto</title>
-  </head>
-  <body>
-    <div class="grid-container">
-      <header class="header">
-        <h1 class="title">Amigo secreto</h1>
-      </header>
-      <main>
-        <div class="user-input-container">
-          <input
-            type="text"
-            class="user-input"
-            id="userInputField"
-            placeholder="Escribe el nombre de tus amigos"
-          />
-          <button class="user-input-submit" id="userSubtmitBtn">Agregar</button>
-        </div>
-        <div class="friends-list-container">
-          <ul class="friends-ulist" id="friendsUlist"></ul>
-        </div>
-        <div class="secret-friend-container">
-          <button id="selectFriendBtn" class="friend-selecter-btn">
-            Elegir amigo
-          </button>
-          <div class="chosen-friend hidden" id="secretFriendText"></div>
-        </div>
-      </main>
-      <footer class="footer">
-        <p>
-          Hecho por <a href="https://github.com/sebg02">Sebas GR</a> &copy 2025
-        </p>
-      </footer>
-    </div>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Amigo Secreto</title>
+</head>
 
-    <script src="./main.js"></script>
-  </body>
+<body>
+    <main class="main-content">
+        <header class="header-banner">
+            <h1 class="main-title">Amigo Secreto</h1>
+            <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
+        </header>
+        
+        <section class="input-section">
+            <h2 class="section-title">Digite el nombre de sus amigos</h2>
+            <div class="input-wrapper">
+                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+            </div>
+           
+            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+
+            <div class="button-container">
+                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                    <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
+                    Sortear amigo
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js" defer></script>
+
+</body>
 </html>

@@ -1,100 +1,162 @@
-html {
-  margin: 0;
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Calibri, "Trebuchet MS", sans-serif;
-  margin: 0;
-  min-height: 100vh;
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
-  min-height: 100vh;
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
-.header {
-  text-align: center;
-  background-color: #a2eaec;
-  margin: 0;
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
 }
 
-h1 {
-  margin: 0;
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
 }
 
-main {
-  margin-top: 2rem;
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
 }
 
-.title {
-  margin-bottom: 2rem;
-  padding: 5rem;
-  font-size: 3rem;
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
 }
 
-.user-input-container {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 10px;
-  align-items: center;
-  padding: 15px;
-  max-width: 400px;
-  margin: 0 auto;
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
 }
 
-.user-input {
-  max-width: 500px;
-  padding: 0.5rem;
-  border: 1px solid gray;
-  margin-right: 0.4em;
-  border-radius: 5px;
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
 }
 
-.user-input-submit {
-  padding: 0.5rem;
-  background-color: #88ebd5;
-  border: 1px solid black;
-  border-radius: 5px;
+.button-container {
+    width: 300px;
+    justify-content: center;
 }
 
-.friends-list-container {
-  display: flex;
-  justify-content: center;
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.secret-friend-container {
-  display: grid;
-  place-content: center;
-}
-.friend-selecter-btn {
-  padding: 0.5rem;
-  background-color: #e79e59;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-button:hover {
-  cursor: pointer;
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
-.hidden {
-  display: none;
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
 }
 
-.chosen-friend {
-  margin: 3rem;
-  font-weight: bold;
-  background-color: #95fc95;
-  padding: 1rem;
-  border: solid 1px #1a9b1a;
-  border-radius: 2px;
+.button-add:hover {
+    background-color: #a1a1a1;
 }
 
-.footer {
-  margin-top: 6rem;
-  text-align: center;
-  background-color: #b3e5f5;
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botón de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
 }
