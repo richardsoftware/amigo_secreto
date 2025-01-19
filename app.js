@@ -1,39 +1,3 @@
-/*// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación.
-// Aquí deberás desarrollar la lógica para resolver el problema.
-// Archivo: app.js
-const nameInput = document.getElementById('nameInput');
-const addButton = document.getElementById('addButton');
-const nameList = document.getElementById('nameList');
-const drawButton = document.getElementById('drawButton');
-const result = document.getElementById('result');
-
-const names = [];
-
-// Agregar nombres a la lista
-addButton.addEventListener('click', () => {
-    const name = nameInput.value.trim();
-    if (name) {
-        names.push(name);
-        const listItem = document.createElement('li');
-        listItem.textContent = name;
-        nameList.appendChild(listItem);
-        nameInput.value = '';
-        nameInput.focus();
-    }
-});
-
-// Realizar el sorteo
-drawButton.addEventListener('click', () => {
-    if (names.length > 0) {
-        const randomIndex = Math.floor(Math.random() * names.length);
-        result.textContent = `El amigo secreto es: ${names[randomIndex]}`;
-    } else {
-        result.textContent = 'Por favor, ingresa al menos un nombre.';
-    }
-});*/
-
-
-
 // Array para almacenar los nombres de los amigos
 let amigos = [];
 
