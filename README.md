@@ -3,30 +3,15 @@
 Descripción
 "Amigo Secreto" es una aplicación interactiva desarrollada en HTML, CSS y JavaScript que permite a los usuarios agregar nombres de amigos en una lista para luego realizar un sorteo aleatorio y determinar quién es el "amigo secreto".
 
-Características
-Interfaz amigable:
-
-Diseño limpio y responsivo utilizando CSS.
-Fuente personalizada para una mejor experiencia visual.
-
 Adición de nombres:
 
 Los usuarios pueden ingresar nombres de sus amigos mediante un campo de texto.
 Botón "Añadir" para agregar nombres a la lista.
 
-Visualización dinámica:
-
-Los nombres ingresados se muestran dinámicamente en una lista visible.
-
 Sorteo aleatorio:
 
-Botón "Sortear amigo" para seleccionar un nombre al azar de la lista.
+Con el Botón "Sortear amigo" se selecciona un nombre al azar de la lista.
 El resultado del sorteo se muestra en pantalla.
-
-Accesibilidad:
-
-Uso de atributos ARIA para mejorar la accesibilidad de la aplicación.
-Roles y etiquetas para lectores de pantalla.
 
 Validaciones:
 

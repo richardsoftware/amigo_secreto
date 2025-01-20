@@ -18,7 +18,7 @@ function agregarAmigo() {
         // Añadir el nombre a la lista visible
         listaAmigos.appendChild(li);
 
-        // Limpiar el campo de entrada y enfocarlo nuevamente
+        // Limpia el campo de entrada
         input.value = '';
         input.focus();
     } else {
